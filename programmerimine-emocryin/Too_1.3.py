@@ -107,4 +107,6 @@ aeg = int(input("Sisesta aeg minutites: "))
 tunnid = aeg // 60
 minutid = aeg % 60
 
-print(f"{tunnid}:{minutid:02d}")
+print(f"{tunnid}:{minutid:02d}") 
+
+# blablablablebleble
