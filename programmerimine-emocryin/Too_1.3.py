@@ -68,7 +68,7 @@ a="Kill-koll"
 b="Killadi-koll"
 print(a.upper() * 3 + b.upper() + a.upper() * 3 + b.upper() + a.upper() * 3)
 
-laul = """Rong see sõitis tsuhh tsuhh tsuhh,
+print("""Rong see sõitis tsuhh tsuhh tsuhh,
 piilupart oli rongijuht.
 Rattad tegid rat tat taa,
 rat tat taa ja tat tat taa.
@@ -78,9 +78,7 @@ kas sa tead, kes olid seal?
 Rong see sõitis tuut tuut tuut,
 piilupart oli rongijuht.
 Rattad tegid kill koll koll,
-kill koll koll ja kill koll kill."""
-
-print(laul.upper())
+kill koll koll ja kill koll kill.""".upper())
 
 a = float(input("Sisesta esimese külje pikkus: "))
 b = float(input("Sisesta teise külje pikkus: "))
