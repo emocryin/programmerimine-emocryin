@@ -21,15 +21,13 @@ print("Täna on", tana.day)
 print("päev, kuu number on", tana.month)
 print("ja aasta on", tana.year)
 
-month(theyear=2026,themonth=10)
-kuulõpuni=monthrange(tana.year, tana.month)
+kuulõpuni=monthrange(tana.year, tana.month)[1] - tana.day
 print(kuulõpuni,"on jäänud kuu lõpuni")
 aastalõpuni=(date(tana.year, 12, 31) - tana).days
 print("Aasta lõpuni on jäänud", aastalõpuni, "päeva.")
 sünnipäev=date(2009, 3, 25)
 vanus=aastalõpuni//365
 print("Oled",vanus,"aastat,", (aastalõpuni%365)//30, "kuud ja")
-print((aastalõpuni%365)//30, "kuud ja")
 print((aastalõpuni%365)%30 ,"päeva vana.")
 
 # Koosta programm on öeldud tehte 3 + 8 / (4 - 2) * 4 vastuse?
@@ -43,8 +41,8 @@ try:
   R = float(input("R: "))
   print("Ruudu pindala:", R**2)
   print("Ruudu ümbermõõt:", 4*R)
-  print("Ringi pindala:", pi*R**2)
-  print("Ringi ümbermõõt:", 2*pi*R)
+  print("Ringi pindala:", round(pi*R**2, 2))
+  print("Ringi ümbermõõt:", round(2*pi*R, 2))
 except ValueError:
     print("sisse number dumbass")
 
@@ -83,10 +81,10 @@ kill koll koll ja kill koll kill.""".upper())
 a = float(input("Sisesta esimese külje pikkus: "))
 b = float(input("Sisesta teise külje pikkus: "))
 
-U = 2 * (a + b)
+P = 2 * (a + b)
 S = a * b
 
-print("Ümbermõõt:", U)
+print("Ümbermõõt:", P)
 print("Pindala:", S)
 
 kütus = float(input("Mitu liitrit kütust tangiti? "))
@@ -101,10 +99,3 @@ M = float(input("Mitu minutit rulluisutati? "))
 kaugus = 29.9 * M / 60
 
 print("Läbitud vahemaa:", round(kaugus, 2), "km")
-
-aeg = int(input("Sisesta aeg minutites: "))
-
-tunnid = aeg // 60
-minutid = aeg % 60
-
-print(f"{tunnid}:{minutid:02d}") 
