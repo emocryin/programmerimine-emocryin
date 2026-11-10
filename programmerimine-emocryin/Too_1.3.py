@@ -5,25 +5,25 @@ from math import *
 tana = date.today()
 print("Tere! \nTäna on",tana)
 
-kys = tana.strftime("%d/%m/%Y")
-print("Tere! \nTäna on",kys)
+tana1 = tana.strftime("%d/%m/%Y")
+print("Tere! \nTäna on",tana1)
 
-inger = tana.strftime("%B %d, %Y")
-print("Tere! \nTäna on",inger)
+tana2 = tana.strftime("%B %d, %Y")
+print("Tere! \nTäna on",tana2)
 
-zinger = tana.strftime("%m/%d/%y")
-print("Tere! \nTäna on",zinger)
+tana3 = tana.strftime("%m/%d/%y")
+print("Tere! \nTäna on",tana3)
 
-gsf = tana.strftime("%b-%d-%Y")
-print("Tere! \nTäna on",gsf)
+tana4 = tana.strftime("%b-%d-%Y")
+print("Tere! \nTäna on",tana4)
 
 print("Täna on", tana.day)
 print("päev, kuu number on", tana.month)
 print("ja aasta on", tana.year)
 
 month(theyear=2026,themonth=10)
-nigger=monthrange(tana.year, tana.month)
-print(nigger,"on jäänud kuu lõpuni")
+kuulõpuni=monthrange(tana.year, tana.month)
+print(kuulõpuni,"on jäänud kuu lõpuni")
 aastalõpuni=(date(tana.year, 12, 31) - tana).days
 print("Aasta lõpuni on jäänud", aastalõpuni, "päeva.")
 sünnipäev=date(2009, 3, 25)
@@ -108,5 +108,3 @@ tunnid = aeg // 60
 minutid = aeg % 60
 
 print(f"{tunnid}:{minutid:02d}") 
-
-# blablablablebleble
